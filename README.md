@@ -94,3 +94,18 @@ plots than this to mean much (and restraint shows nothing here: the public sampl
 already-correct control plots), so reason about what your confidence *should* represent rather than
 maximizing the number on this sample. Your real grade uses a larger hidden set, so don't overfit to
 these few. The contract spec is in `CONTRACT.md`.
+## Results
+
+### Vadnerbhairav
+
+- Official IoU: 0.612
+- Predicted IoU: 0.713
+- Improvement: +0.112
+- Improved plots: 100%
+
+### Malatavadi
+
+- Official IoU: 0.510
+- Predicted IoU: 0.588
+- Improvement: +0.090
+- Improved plots: 66.7%
