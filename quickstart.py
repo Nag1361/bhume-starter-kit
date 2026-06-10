@@ -29,12 +29,12 @@ def main(village_dir: str) -> None:
     n_truth = 0 if village.example_truths is None else len(village.example_truths)
     print(f'Loaded {village.slug}')
     print(f'  {len(village.plots)} plots · {n_truth} example truths · '
-          f'boundaries={"yes" if village.boundaries_path else "none"}')
+f'boundaries={"yes" if village.boundaries_path else "none"}')
 
     # 1) Look at the imagery under one plot — this is your substrate.
     pn = village.plots.index[0]
     with open_imagery(village.imagery_path) as src:
-        patch = patch_for_plot(src, village.plot(pn), pad_m=30)
+        patch = patch_for_plot(src,village.plot(pn), pad_m=30)
     Image.fromarray(patch.image).save('patch_example.png')
     print(f'  image patch under plot {pn}: {patch.image.shape} → saved patch_example.png')
 
