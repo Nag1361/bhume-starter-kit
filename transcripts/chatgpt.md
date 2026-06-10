@@ -1,0 +1,5 @@
+- Used ChatGPT to understand the rubric and scoring.
+- Debugged Git, uv, and dataset setup.
+- Interpreted evaluation metrics.
+- Discussed confidence calibration strategies.
+- Chose to use the global median shift baseline due to time constraints and its measurable improvement.
